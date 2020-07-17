@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         pulseColor(ContextCompat.getColor(this, android.R.color.holo_red_light))
-
     }
 
     private fun pulseColor(@ColorInt color: Int) {
