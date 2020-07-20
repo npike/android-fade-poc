@@ -15,6 +15,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        violationLayout.setDependencies(
+            severityShadowBackgroundFactory = ShapeSeverityShadowBackgroundFactory(this)
+        )
+
         violationLayout.setOnClickListener {
             pulseColor(ContextCompat.getColor(this, R.color.yellow))
         }
