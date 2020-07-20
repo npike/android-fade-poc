@@ -6,6 +6,7 @@ import android.graphics.drawable.LayerDrawable
 import android.graphics.drawable.ShapeDrawable
 import android.graphics.drawable.shapes.RoundRectShape
 import android.view.View
+import android.view.View.LAYER_TYPE_SOFTWARE
 import androidx.annotation.ColorInt
 import androidx.annotation.ColorRes
 import androidx.annotation.DimenRes
@@ -40,7 +41,6 @@ object ViewUtils {
         shapeDrawable.paint.color = backgroundColorValue
         shapeDrawable.paint.setShadowLayer(cornerRadiusValue, 0f, 0f, shadowColor)
 
-//        view.setLayerType(LAYER_TYPE_SOFTWARE, shapeDrawable.getPaint());
         shapeDrawable.shape = RoundRectShape(outerRadius, null, null)
 
         val drawable =

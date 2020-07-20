@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         // calls setPulseColor on our [ViolationLayout].  This should probably be encapsulated
         // within the layout itself, but this is a proof of concept.
-        val colorAnim = ObjectAnimator.ofInt(violationLayout, "violationColor", startColor, color)
+        val colorAnim = ObjectAnimator.ofInt(violationLayout, "violationColor", startColor, color, startColor)
         colorAnim.duration = 2000
         colorAnim.setEvaluator(ArgbEvaluator())
         colorAnim.repeatMode = REVERSE
